@@ -166,63 +166,54 @@
         <h3>Ashwagandha</h3>
         <p>Natural stress support and energy booster.</p>
         <p class="price">R130</p>
-        <a class="btn" href="https://wa.me/27799392702?text=I'm%20interested%20in%20Ashwagandha">Order Now</a>
       </div>
       <div class="product" data-aos="fade-up">
         <img src="images/collagen.jpg" alt="Collagen" />
         <h3>Collagen</h3>
         <p>Supports skin, joints, and overall vitality.</p>
         <p class="price">R120</p>
-        <a class="btn" href="https://wa.me/27799392702?text=I'm%20interested%20in%20Collagen">Order Now</a>
       </div>
       <div class="product" data-aos="fade-up">
         <img src="images/maca.jpg" alt="Maca Root" />
         <h3>Maca Root</h3>
         <p>Enhances stamina, mood and endurance.</p>
         <p class="price">R140</p>
-        <a class="btn" href="https://wa.me/27799392702?text=I'm%20interested%20in%20Maca%20Root">Order Now</a>
       </div>
       <div class="product" data-aos="fade-up">
         <img src="images/macho.jpg" alt="Macho Man" />
         <h3>Macho Man</h3>
         <p>Men's vitality and hormonal balance.</p>
         <p class="price">R170</p>
-        <a class="btn" href="https://wa.me/27799392702?text=I'm%20interested%20in%20Macho%20Man">Order Now</a>
       </div>
       <div class="product" data-aos="fade-up">
         <img src="images/moringa.jpg" alt="Moringa" />
         <h3>Moringa</h3>
         <p>Superfood packed with nutrients and antioxidants.</p>
         <p class="price">R90</p>
-        <a class="btn" href="https://wa.me/27799392702?text=I'm%20interested%20in%20Moringa">Order Now</a>
       </div>
       <div class="product" data-aos="fade-up">
         <img src="images/seamoss.jpg" alt="SEA MOSS" />
         <h3>SEA MOSS</h3>
         <p>Immune-boosting marine super supplement.</p>
         <p class="price">R150</p>
-        <a class="btn" href="https://wa.me/27799392702?text=I'm%20interested%20in%20SEA%20MOSS">Order Now</a>
       </div>
       <div class="product" data-aos="fade-up">
         <img src="images/shilajit.jpg" alt="Shilajit" />
         <h3>Shilajit</h3>
         <p>Restores energy, enhances performance and wellness.</p>
         <p class="price">R200</p>
-        <a class="btn" href="https://wa.me/27799392702?text=I'm%20interested%20in%20Shilajit">Order Now</a>
       </div>
       <div class="product" data-aos="fade-up">
         <img src="images/soursop.jpg" alt="Soursop Leaves" />
         <h3>Soursop Leaves</h3>
         <p>Traditional remedy for immunity and detox.</p>
         <p class="price">R100</p>
-        <a class="btn" href="https://wa.me/27799392702?text=I'm%20interested%20in%20Soursop%20Leaves">Order Now</a>
       </div>
       <div class="product" data-aos="fade-up">
         <img src="images/zinc.jpg" alt="Zinc" />
         <h3>Zinc</h3>
         <p>Supports immunity and cellular metabolism.</p>
         <p class="price">R80</p>
-        <a class="btn" href="https://wa.me/27799392702?text=I'm%20interested%20in%20Zinc">Order Now</a>
       </div>
     </div>
   </section>
@@ -377,6 +368,30 @@
   <footer>
     <p>2025 Ghenorganics | By <a href="https://www.valoyitech.co.za/" target="_blank">Hector Baloyi</a></p>
   </footer>
+
+  <!-- Modal for Product Details -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-header">
+        <h2 id="modal-product-name"></h2>
+        <p class="price" id="modal-product-price"></p>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image-container">
+          <img id="modal-product-image" src="" alt="Product Image" />
+          <img id="modal-product-secondary-image" src="" alt="Secondary Product Image" />
+        </div>
+        <div class="modal-description">
+          <h3>Product Description</h3>
+          <p id="modal-product-description"></p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a id="modal-order-button" class="btn" href="#">Order Now</a>
+      </div>
+    </div>
+  </div>
 
   <a class="floating-whatsapp" href="https://wa.me/27799392702" target="_blank">
     <i class="fab fa-whatsapp"></i> Chat to us
