@@ -113,8 +113,6 @@ body {
   top: -80px !important;
 }
 
-
-
 /* HERO SECTION */
 .hero-slider {
   position: relative;
@@ -150,8 +148,6 @@ body {
   text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
 
-
-
 /* ABOUT SECTION */
 .about {
   padding: 60px 20px;
@@ -175,7 +171,6 @@ body {
   -ms-overflow-style: none;
 }
 
-
 .about-scroll-container::-webkit-scrollbar {
   display: none; /* Hide scrollbar in Chrome, Safari, and Opera */
 }
@@ -197,8 +192,6 @@ body {
   flex-shrink: 0; /* Do not shrink */
   scroll-snap-align: start; /* Snap each item into view */
 }
-
-
 
 .about-item:hover {
   transform: translateY(-10px);
@@ -244,7 +237,6 @@ body {
   }
 }
 
-
 /* PRODUCTS SECTION */
 .products {
   padding: 60px 20px;
@@ -282,6 +274,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   transition: transform 0.3s;
+  cursor: pointer;
 }
 
 .product:hover {
@@ -310,21 +303,77 @@ body {
   color: #444;
 }
 
-.product .btn {
-  margin-top: 10px;
-  background: #2e7d32;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
-  text-decoration: none;
-  display: inline-block;
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.product .btn:hover {
-  background: #1b5e20;
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: modalFadeIn 0.4s;
+}
+
+@keyframes modalFadeIn {
+  from {opacity: 0; transform: translateY(-50px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+.close-modal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  color: #333;
+}
+
+.modal-header {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.modal-body {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-image-container {
+  flex: 1;
+}
+
+.modal-image-container img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.modal-description {
+  flex: 1;
+}
+
+.modal-footer {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
 }
 
 /* CONTACT SECTION */
@@ -536,6 +585,32 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Floating WhatsApp */
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  padding: 12px 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  z-index: 999;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.floating-whatsapp:hover {
+  background: #128c7e;
+}
+
+.floating-whatsapp i {
+  font-size: 1.4rem;
 }
 
 /* Responsive Adjustments */
