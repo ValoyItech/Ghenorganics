@@ -90,7 +90,7 @@ nextBtn.addEventListener('click', () => {
   });
 });
 
-// Hero Slider
+// Hero Slider - Updated to ensure images load before starting animation
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 
@@ -104,5 +104,15 @@ function nextSlide() {
   showSlide(currentSlide);
 }
 
-// Auto slide every 5 seconds
-setInterval(nextSlide, 5000);
+// Initialize slider after images are loaded
+document.addEventListener('DOMContentLoaded', () => {
+  // Preload the first image
+  const firstSlideImage = new Image();
+  firstSlideImage.src = 'images/slide1.jpg';
+  
+  // Start the slider after the first image is loaded
+  firstSlideImage.onload = () => {
+    showSlide(0); // Show the first slide immediately
+    setInterval(nextSlide, 5000); // Start the auto-slide
+  };
+});
