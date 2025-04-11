@@ -25,32 +25,58 @@
     <!-- Favicon -->
     <link rel="icon" href="images/logo.png" type="image/png" />
     
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: 'Open Sans', sans-serif;
-      padding: 2rem;
-      background-color: #f8f8f8;
-      color: #333;
-      line-height: 1.6;
-    }
-    .policy-container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    h1, h2 {
-      color: #1e8e3e;
-    }
-    ul {
-      padding-left: 1.5rem;
-    }
-  </style>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: 'Open Sans', sans-serif;
+        padding: 2rem;
+        background-color: #f8f8f8;
+        color: #333;
+        line-height: 1.6;
+      }
+      .policy-container {
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      }
+      h1, h2 {
+        color: #1e8e3e;
+      }
+      ul {
+        padding-left: 1.5rem;
+      }
+      .centered-logo {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .centered-logo img {
+        height: 60px;
+      }
+      .back-home {
+        display: inline-block;
+        background-color: #1e8e3e;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 1rem;
+        transition: background-color 0.3s;
+      }
+      .back-home:hover {
+        background-color: #1b5e20;
+      }
+    </style>
 </head>
 <body>
+  <!-- Header with Centered Logo -->
+  <header>
+    <div class="centered-logo">
+      <img src="images/logo.png" alt="Ghenorganics Logo" />
+    </div>
+  </header>
 
   <div class="policy-container">
     <h1>Return & Refund Policy</h1>
@@ -95,5 +121,21 @@
     <p><strong>Note:</strong> Ghenorganics reserves the right to deny any return that does not meet our policy conditions.</p>
   </div>
 
+  <!-- Footer with Back to Home Button -->
+  <footer>
+    <a href="index.html" class="back-home">
+      <i class="fas fa-home"></i> Back to Home
+    </a>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="floating-whatsapp" href="https://wa.me/27799392702" target="_blank">
+    <i class="fab fa-whatsapp"></i> Chat to us
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
